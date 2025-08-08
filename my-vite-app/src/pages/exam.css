@@ -1,0 +1,54 @@
+.exam-container {
+    background-color: rgb(141, 174, 196);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.exam-child {
+    background-color: rgb(255, 255, 255);
+    width: 900px;
+    padding: 1rem 3rem 2rem 2rem;
+    border-radius: 1rem;
+    margin: 1rem 0rem;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    overflow-x: hidden !important;
+    scrollbar-width: none; 
+}
+
+.exam-child::-webkit-scrollbar {
+    width: 0px; 
+    background: transparent; 
+}
+
+.exam-child::-webkit-scrollbar-thumb {
+    background: transparent; 
+}
+
+
+.exam-child h1 {
+    text-align: center;
+    position: relative;
+}
+
+.exam-child h1::after {
+    content: "";
+    position: absolute;
+    bottom: -30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(102, 125, 140);
+    width: 85px !important;
+    height: 6px;
+    border-radius: 10px;
+}
+.questions{
+    padding: 1rem;
+}
+.questions input{
+    margin-top: .5rem;
+    height: 140px;
+    padding: 3rem 0rem !important;
+}

@@ -1,0 +1,148 @@
+/* styles.css */
+
+/* General body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-login {
+  padding: 0%;
+  margin: 0%;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background: url("../assets/exambg.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login container styling */
+.login {
+  background: rgba(255, 255, 255, .6);
+  backdrop-filter: blur(20px);
+  padding: 2rem 0.9rem 1rem;
+  border-radius: 10px;
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.6);
+  max-width: 600px;
+  width: 350px;
+  text-align: center;
+}
+
+/* Heading styling */
+.login h1 {
+  color: #ff721b;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+/* Form styling */
+.login form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0rem;
+  width: 100%;
+}
+
+/* Label styling */
+.login label {
+  font-size: 1rem;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  gap: .5rem;
+  justify-content: center;
+  flex-direction: column;
+  color: #ff8c42;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Input field styling */
+.login input {
+  width: 90%;
+  overflow: hidden !important;
+  padding: .5rem 0.75rem;
+  margin-bottom: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+.login input:focus {
+  border-color: #ff8c42;
+  outline: none;
+}
+
+/* Button styling */
+.login button {
+  background-color: #ff8c42;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login button:disabled {
+  background-color: #ff8a4284;
+  cursor: not-allowed;
+}
+
+.login button:hover:not(:disabled) {
+  background-color: #e67e22;
+}
+
+/* Authenticated button styling */
+.login button.authenticated {
+  background-color: #2ecc71;
+}
+
+.login button.authenticated:hover {
+  background-color: #27ae60;
+}
+
+/* Additional styling for the "Go to Exam Page" button */
+.login button.go-to-exam {
+  background-color: #ff8c42;
+  margin-top: 1.5rem;
+}
+
+.login button.go-to-exam:hover {
+  background-color: #e67e22;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .login {
+    padding: 1.5rem;
+  }
+
+  .login h1 {
+    font-size: 1.75rem;
+  }
+
+  .login input {
+    padding: 0.5rem;
+  }
+
+  .login button {
+    padding: 0.5rem 1rem;
+  }
+}
