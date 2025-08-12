@@ -3,13 +3,13 @@ import { getFirestore, collection, addDoc, setDoc, getDocs, getDoc, serverTimest
 
 const firebaseConfig = {
 
-    apiKey: "AIzaSyDnm0_CXGcvyBEPRANZvanqQEQs703PrCk",
-    authDomain: "exam-system-b270f.firebaseapp.com",
-    databaseURL: "https://exam-system-b270f-default-rtdb.firebaseio.com",
-    projectId: "exam-system-b270f",
-    storageBucket: "exam-system-b270f.firebasestorage.app",
-    messagingSenderId: "382075561863",
-    appId: "1:382075561863:web:0341d43f07f99131995522"
+    apiKey: "Place_your_api_key_here",
+    authDomain: "your_authDomain",
+    databaseURL: "databaseURL",
+    projectId: "your_projectID",
+    storageBucket: "your_storageBucket",
+    messagingSenderId: "messagingSenderID",
+    appId: "appID"
 
 };
 
