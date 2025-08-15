@@ -51,25 +51,6 @@ This project aims to create an **accessible, inclusive, and AI-assisted** examin
 **AI Integration**  
 - LLaMA 3 (via Ollama) for AI-assisted answer modifications
 
----
-
-## 📂 Project Structure
-
-inclusive-exam-system/
-│
-├── frontend/ # ReactJS frontend
-│ ├── src/
-│ │ ├── components/ # UI components
-│ │ ├── pages/ # Main pages (Home, Exam, Admin, etc.)
-│ │ ├── services/ # API & Firebase functions
-│ │ └── App.js
-│ └── package.json
-│
-├── backend/ # Flask backend
-│ ├── app.py # Main Flask app
-│ └── requirements.txt
-│
-└── README.md
 
 ---
 
@@ -121,3 +102,4 @@ Candidates can modify answers via LLM but cannot get direct AI-generated answers
 Answers are stored in Firestore and can be reviewed by admin.
 
 System generates PDF of answers for record keeping.
+
